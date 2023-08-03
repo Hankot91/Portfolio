@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/sobre-mi.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/proyectos.css">
+    <link rel="stylesheet" href="styles/contacto.css">
+    <link rel="stylesheet" href="styles/educacion.css
+    ">
+    <link rel="stylesheet" href="styles/footer.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#inicio">
+                    <img src="styles/assets/logo-a.jpg" alt="logo" class="nav-logo-img">
+                    <span class="nav-logo-label">Andres</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#inicio">
+                                    <span class="link_text"><i class="fa-solid fa-house"></i> Inicio</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobre">
+                                    <span class="link_text"><i class="fa-solid fa-address-card"></i> Sobre Mi</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#proyectos">
+                                    <span class="link_text"><i class="fa-regular fa-folder-open"></i> Proyectos</span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Mas
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li>
+                                        <a class="dropdown-item" href="#educacion">
+                                            <span class="link_text"><i class="fa-solid fa-graduation-cap"></i>
+                                                Educación</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#skills">
+                                            <span class="link_text"><i class="fa-solid fa-bookmark"></i> Skills</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#contacto">
+                                            <span class="link_text"><i class="fa-solid fa-address-book"></i>
+                                                Contacto</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#redes">
+                                            <span class="link_text"><i class="fa-solid fa-square-share-nodes"></i>
+                                                Redes</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" id="searchInput" placeholder="Búsqueda" aria-label="Search">
+                            <button class="btn btn-success" type="button" id="searchButton">Buscar</button>                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="banner-container" id="inicio">
+            <div class="left-content">
+                <h1>Hola soy <br> <span class="auto-type text-type"></span></h1>
+                <p>Estudiante de ingenieria de sistemas</p>
+                <div class="contact-content">
+                    <button class="btn btn-success btn-contact" type="button">
+                        <a href="#contacto" class="nav-link">
+                            contáctame
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </a>
+                    </button>
+                    <a href="styles/assets/documents/cv.pdf" target="_blank" class="link-download">
+                        <button class="btn btn-success btn-download" type="button">
+                            curriculum <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="oval-img">
+                    <img class="img-fluid" src="styles/assets/perfil.jpeg" alt="Foto de perfil">
+                </div>
+            </div>
+        </section>
+        <div class="divider" id="sobre"></div>
+        <section class="sobre-mi">
+            <div class="row">
+                <div class="col-lg-6 pd-0">
+                    <img src="styles/assets/fondo.jpg" alt="Imagen de la biografia" class="img-fluid rounded height-lg">
+                </div>
+                <div class="col-lg-6  pd-2">
+
+                    <h2 class="pb-2 border-bottom tittle-card mb-4 text-sobre text-center">Sobre mí</h2>
+                    <p class="lead text-justify">👋¡Hola! Soy Andres Vanegas, estudiante de ingeniería de sistemas en la
+                        Universidad de los Llanos, en
+                        Villavicencio, Colombia, actualmente tengo <span id="date-age">21</span> años.
+                        Mi pasión es la programación y su impacto en nuestras vidas diarias.
+                        Me intriga la lógica y cómo las herramientas de programación facilitan nuestras tareas
+                        cotidianas.</p>
+                    <br>
+                    <p class="lead text-justify">Durante mis estudios universitarios, he compaginado el aprendizaje con
+                        trabajos de atención al cliente,
+                        lo que me ha brindado habilidades valiosas en trabajo en equipo, comunicación, liderazgo y
+                        proactividad.
+                        También he participado en proyectos de optimización en la universidad lo que tambien ha
+                        desarrollado aún más mi
+                        lógica de programación.</p>
+                    <br>
+                    <p class="lead text-justify">Mi objetivo es convertirme en un profesional del desarrollo de software
+                        y aplicar mis habilidades en una empresa que valore el crecimiento personal y profesional.
+                        Busco desafíos que me permitan seguir mejorando y desarrollando mis capacidades de resolución de
+                        problemas.</p>
+                    <br>
+                    <p class="lead text-justify">¡Siempre estoy abierto a conectar
+                        con nuevas personas y compartir conocimientos! Puedes encontrarme en LinkedIn o incluso tomar un
+                        café juntos.
+                        ¡Espero poder contribuir en el mundo de la programación de una manera significativa! 🚀
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="divider" id="skills"></div>
+        <section class="skills-hobbies">
+            <div class="container px-4 py-5 bg-gray mt-5" id="icon-grid">
+                <h2 class="pb-2 border-bottom tittle-card">Skills</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5 ">
+                    <div class="col d-flex justify-content-center mb-2">
+                        <div>
+                            <h3 class="fw-bold mb-0 fs-4 pb-2 h-hover"><i
+                                    class="fa-brands fa-html5 tittle-skill html-hover"></i> </h3>
+                            <p class="text-center  hover-text html-text">Html</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-2">
+                        <div>
+                            <h3 class="fw-bold mb-0 fs-4 mb-2 h-hover"><i
+                                    class="fa-brands fa-css3-alt tittle-skill css-hover"></i></h3>
+                            <p class="text-center  hover-text css-text">Css</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-2">
+                        <div>
+                            <h3 class="fw-bold mb-0 fs-4 pb-2 h-hover"><i
+                                    class="fa-brands fa-js tittle-skill js-hover"></i></h3>
+                            <p class="text-center  hover-text js-text">Javascript</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-2">
+                        <div>
+                            <h3 class="fw-bold mb-0 fs-4 pb-2 h-hover"><i
+                                    class="fa-brands fa-react tittle-skill react-hover"></i></h3>
+                            <p class="text-center  hover-text react-text">React</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-2">
+                        <div>
+                            <h3 class="fw-bold mb-0 fs-4 mb-2 h-hover"><i
+                                    class="fa-brands fa-git-alt tittle-skill git-hover"></i></h3>
+                            <p class="text-center hover-text git-text">Git & Github</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-2">
+                        <div>
+                            <h3 class="fw-bold mb-0 fs-4 mb-2 h-hover"><i
+                                    class="fa-brands fa-java tittle-skill java-hover"></i></h3>
+                            <p class="text-center  hover-text java-text">Java</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-2">
+                        <div>
+                            <h3 class="fw-bold mb-0 fs-4 mb-2 h-hover"><i
+                                    class="fa-brands fa-php tittle-skill php-hover"></i></h3>
+                            <p class="text-center  hover-text php-text">Php</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-2">
+                        <div>
+                            <h3 class="fw-bold mb-0 fs-4 mb-2 h-hover"><i class="fas fa-code tittle-skill c-hover"></i>
+                            </h3>
+                            <p class="text-center hover-text c-text">C/C++</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center mb-2">
+                        <div>
+                            <h3 class="fw-bold mb-0 fs-4 mb-2 h-hover"><i
+                                    class="fas fa-database tittle-skill sql-hover"></i></h3>
+                            <p class="text-center hover-text sql-text">PostgreSQL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-hobbies" id="cards-hobbies">
+            </div>
+        </section>
+        <div class="divider" id="educacion"></div>
+        <section class="educacion py-4 px-3">
+            <h2 class="m-4  pb-2 border-bottom tittle-card">Formación académica</h2>
+            <div class="bd-example m-0 border-0">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Ingeniería de sistemas
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <figure class="figure">
+                                    <img src="styles/assets/unillanos-logo.png" class="figure-img img-fluid rounded"
+                                        alt="universidad de los llanos">
+                                    <figcaption class="figure-caption"><strong>2021 - En curso </strong></figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Especializacion Front-end
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <figure class="figure">
+                                    <img src="styles/assets/alura-logo.webp" class="figure-img img-fluid rounded"
+                                        alt="Alura latam">
+                                    <figcaption class="figure-caption"><strong>2023 - En curso </strong>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    GreenDigital Skills
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <figure class="figure">
+                                        <img src="styles/assets/incon-academy-logo.png"
+                                            class="figure-img img-fluid rounded" alt="Incon academy">
+                                        <figcaption class="figure-caption"><strong>2023 - Finalizado</strong>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <div class="divider" id="proyectos"></div>
+        <section class="proyectos py-4 px-3">
+            <h2 class="pb-2 border-bottom tittle-card mb-4 mx-4">Proyectos</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="styles/assets/proyecto1.png" alt="encriptador de texto"
+                            class="bd-placeholder-img card-img-top" width="100%" height="225">
+                        <div class="card-body">
+                            <p class="card-text mb-2 text-align-justify">
+                                Mediante una interfaz amigable y fácil de usar, los usuarios pueden ingresar un texto en
+                                el encriptador y seleccionar la opción de encriptar o desencriptar. Al encriptar, las
+                                vocales del texto original se transforman en una serie de palabras predefinidas, lo que
+                                resulta en un mensaje encriptado único y creativo.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <a href="https://github.com/Hankot91/encriptador-de-texto" target="_blank">
+                                            <i class="fa-regular fa-file-code text-light"></i>
+                                            <span class="link-text">Ver código</span>
+                                        </a>
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <a href="https://hankot91.github.io/encriptador-de-texto/" target="_blank">
+                                            <i class="fa-solid fa-pager text-light"></i>
+                                            <span class="link-text">Ver demo</span>
+                                        </a>
+                                    </button>
+                                </div>
+                                <small class="text-body-secondary">Encriptador de texto</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="styles/assets/proyecto2.png" alt="Agenda de tareas"
+                            class="bd-placeholder-img card-img-top" width="100%" height="225">
+                        <div class="card-body">
+                            <p class="card-text mb-2 text-align-justify">Esta herramienta para crear y
+                                administrar tareas de manera sencilla y eficiente.
+                                Los usuarios pueden agregar nuevas tareas a su
+                                lista mediante la manipulación del DOM. Al ingresar una tarea en el campo de texto,
+                                pueden agregarla a la lista. Además, cada tarea cuenta con
+                                opciones para editar, marcar como completada o eliminarla de la lista..</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <a href="https://github.com/Hankot91/creador-de-tareas" target="_blank">
+                                            <i class="fa-regular fa-file-code text-light"></i>
+                                            <span class="link-text">Ver código</span>
+                                        </a>
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <a href="https://hankot91.github.io/creador-de-tareas/" target="_blank">
+                                            <i class="fa-solid fa-pager text-light"></i>
+                                            <span class="link-text">Ver demo</span>
+                                        </a>
+                                    </button>
+                                </div>
+                                <small class="text-body-secondary">Agenda de tareas</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="divider" id="contacto"></div>
+        <section class="contacto py-4 px-3">
+            <h2 class="pb-2 border-bottom tittle-card mb-4 mx-4">Contacto</h2>
+            <div class="container px-5 py-5 bg-gray">
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="inputEmail" name="inputEmail"
+                            placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputAsunto" class="form-label">Asunto</label>
+                        <input type="text" class="form-control" id="inputAsunto" name="inputAsunto" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputNombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="inputNombre" name="inputNombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputMensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="inputMensaje" name="inputMensaje" rows="4"
+                            required></textarea>
+                    </div>
+                    <button type="button" class="btn btn-success btn-enviar" id="btnEnviar">enviar</button>
+                </form>
+            </div>
+            <div class="modal modal-dialog-center modal-sm " tabindex="-1" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Ups! <i class="fa-solid fa-triangle-exclamation"></i></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-align-justify">
+                            <p>Por favor, completa todos los campos del formulario antes de enviar.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">entendido</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="divider"></div>
+
+
+    <footer class="d-flex flex-direction justify-content-between align-items-center py-3 bg-footer">
+        <div id="bubblesSection" class="bubbles"></div>
+        <ul class="nav col-md-4 justify-content-center list-unstyled d-flex" id="redes">
+            <li class="ms-3">
+                <a href="https://www.instagram.com/eustass_kidd91/" target="_blank">
+                    <i class="fa-brands fa-instagram fa-footer"></i>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a href="https://www.linkedin.com/in/camilov99/" target="_blank">
+                    <i class="fa-brands fa-linkedin fa-footer"></i>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a href="https://github.com/Hankot91" target="_blank">
+                    <i class="fa-brands fa-github fa-footer"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/">
+                <img src="styles/assets/logo-a.jpg" alt="logo" class="footer-logo-img">
+            </a>
+            <span class="text-footer">
+                <p>&copy; <span id="year">2023</span> Derechos reservados.</p>
+            </span>
+        </div>
+    </footer>
+    <blockquote class="quo-footer blockquote-footer">Developed By: Andres Vanegas</blockquote>
+    <svg>
+        <defs>
+            <filter id="blob">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                    result="blob"></feColorMatrix>
+            </filter>
+        </defs>
+    </svg>
+    <script type="module" src="js/script.js"></script>
+
+</body>
+
+</html>

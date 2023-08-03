@@ -1,0 +1,30 @@
+.proyectos {
+    background: #20262E;
+}
+
+.text-align-justify{
+    text-align: justify;
+}
+
+.btn a {
+    position: relative;
+}
+
+.link-text {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.btn a:hover .link-text {
+    opacity: 1;
+}

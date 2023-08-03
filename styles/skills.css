@@ -1,0 +1,158 @@
+@import url(variables.css);
+
+.skills-hobbies{
+    background: #20262E;
+    padding: 1rem;
+}
+.container-hobbies{
+
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.bg-gray{
+    background: #2b3035;
+    border-radius: 20px;
+    border: 1px solid var(--white);
+    box-shadow: 0 0 5px var(--btnColor1),
+    0 0 25px  var(--btnColor1);
+}
+
+.tittle-card{
+    font-size: 2.2rem;
+    color: var(--white);
+    text-shadow: var(--shadow);
+}
+
+
+.tittle-skill{
+    font-size: 10rem;
+    color: var(--white);
+    transition: color 0.3s, transform 0.3s;
+}
+
+.h-hover:hover{
+    transform: rotate(15deg); 
+}
+
+.h-hover:hover .html-hover {
+    color: #E75A01; 
+}
+
+.html-text{
+    color: #E75A01; 
+}
+
+.h-hover:hover .css-hover {
+    color: #264DE4; 
+}
+
+.css-text{
+    color: #264DE4; 
+}
+
+.h-hover:hover .js-hover {
+    color: #FFD43B; 
+}
+
+.js-text{
+    color: #FFD43B; 
+}
+
+.h-hover:hover .react-hover {
+    color: #61DBFB; 
+}
+
+.react-text{
+    color: #61DBFB; 
+}
+
+.h-hover:hover .git-hover {
+    color: #FD6529; 
+}
+
+.git-text{
+    color: #FD6529; 
+}
+
+.h-hover:hover .java-hover {
+    color: #ED1D25; 
+}
+
+.java-text{
+    color: #ED1D25; 
+}
+
+.h-hover:hover .php-hover {
+    color: #474A8A; 
+}
+
+.php-text{
+    color: #474A8A; 
+}
+
+.h-hover:hover .c-hover {
+    color: #0631a5; 
+}
+
+.c-text{
+    color: #0631a5; 
+}
+
+.h-hover:hover .sql-hover {
+    color: #B0B3D6; 
+}
+
+.sql-text{
+    color: #B0B3D6; 
+}
+
+
+.hover-text {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.bg-card1, .bg-card2, .bg-card3{
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-card1{
+    height: 32rem;
+    background-image: url('../styles/assets/gym.jpg');
+}
+
+.bg-card2{
+    background-image: url(../styles/assets/musica.jpg);
+}
+
+.bg-card3{
+    background-image: url(../styles/assets/game.jpg);
+}
+
+.img-card1, .img-card2, .img-card3{
+    background-size: cover;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+    margin-right: 1rem;
+}
+
+.img-card1{
+    background-image: url(../styles/assets/gym-logo.jpg);
+}
+
+.img-card2{
+    background-image: url(../styles/assets/musica-logo.png);
+}
+
+.img-card3{
+    background-image: url(../styles/assets/game-logo.jpg);
+}

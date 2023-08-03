@@ -1,0 +1,128 @@
+@import url(variables.css);
+
+.bg-footer{
+    background: var(--footerColor);
+}
+
+.bg-footer {
+    z-index: 0;
+    position: relative;
+    min-height: 6rem;
+}
+
+.bg-footer .bubbles {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background: transparent;
+    filter: url("#blob");
+}
+
+.bg-footer .bubbles .bubble {
+    position: absolute;
+    left: var(--position, 50%);
+    background: var(--footerColor);
+    border-radius: 100%;
+    -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+    animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+    transform: translate(-50%, 100%);
+}
+
+@-webkit-keyframes bubble-size {
+
+    0%,
+    75% {
+        width: var(--size, 4rem);
+        height: var(--size, 4rem);
+    }
+
+    100% {
+        width: 0rem;
+        height: 0rem;
+    }
+}
+
+@keyframes bubble-size {
+
+    0%,
+    75% {
+        width: var(--size, 4rem);
+        height: var(--size, 4rem);
+    }
+
+    100% {
+        width: 0rem;
+        height: 0rem;
+    }
+}
+
+@-webkit-keyframes bubble-move {
+    0% {
+        bottom: 0.01rem;
+    }
+
+    100% {
+        bottom: var(--distance, 10rem);
+    }
+}
+
+@keyframes bubble-move {
+    0% {
+        bottom: 0.01rem;
+    }
+
+    100% {
+        bottom: var(--distance, 10rem);
+    }
+}
+
+.flex-direction{
+    flex-direction: column;
+}
+
+.justify-content-center{
+    gap: 1rem;
+}
+
+.py-3 {
+    padding: 1rem;
+}
+
+.fa-footer{
+    font-size: 1.6rem;
+    color: var(--white);
+}
+
+img.footer-logo-img {
+    width: 2.5rem;
+}
+
+.text-footer{
+    font-size: 1.12rem;
+    color: var(--white);
+    text-shadow: 0 5px 11px var(--white);
+}
+
+.quo-footer{
+    background: var(--footerColor);
+    color: aliceblue;
+    width: 100%;
+    z-index: 2;
+    height: 1.5rem;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+svg{
+    display: none;
+}
+
+@media screen and (min-width:768px){
+    .flex-direction{
+        flex-direction: row;
+    }
+}

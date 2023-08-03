@@ -1,0 +1,50 @@
+@import url(variables.css);
+
+.sobre-mi{
+    background: #20262E;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: 0 !important; 
+    margin-left: 0 !important;
+}
+
+.text-sobre{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--white);
+    background: radial-gradient(circle, rgba(101,84,175,1) 24%, rgba(149,117,222,1) 36%, rgba(32,38,46,1) 92%);
+    border-radius: 15px;
+    
+}
+.pd-0{
+    padding: 1rem;
+}
+
+.height-lg{
+    height: 100%;
+    width: 100%;
+}
+
+.pd-2{
+    padding: 2rem;
+}
+
+.text-justify{
+    text-align: justify;
+    color: var(--white);
+}
+
+.divider {
+    width: 100%;
+    height: 4rem;
+    background: transparent;
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
+}
